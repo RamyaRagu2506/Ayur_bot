@@ -1,0 +1,127 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Sure
+    - Yup
+    - Oh sure
+    - Ofcourse
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: body_type
+  examples: | 
+    - I have a [overweight](body_frame) body.
+    - I have a [heavy](body_frame) body. 
+    - I have a [strong](body_frame) body.
+    - I have a [moderate](body_frame) body.
+    - I have a [medium](body_frame) body.
+    - I have a [average](body_frame) body.
+    - I have a [thin](body_frame) body.
+    - I have a [slim](body_frame) body.
+    - I have a [lean](body_frame) body.
+
+- intent: person_name
+  examples: | 
+    - I am [Srinivas](personName)
+    - I am [Ramya](personName)
+    - [Srinivas](personName)
+    - [Ramya](personName)
+    - I am [Vishwa](personName)
+    - [Vishwa](personName)
+
+- intent: appetite_type
+  examples: |
+    - The appetite is quite [bad](appetite_type)
+    - the appetite is [slow](appetite_type)
+    - the appetite [good](appetite_type)
+    - appetite is [normal](appetite_type)
+    - appetite is [variable](appetite_type)
+    - a [bad](appetite_type) appetite
+
+- intent: mind_type
+  examples: |
+    - [restless](mind_type)
+    - [analytical](mind_type)
+    - [calm](mind_type) mind
+    - [restless](mind_type) mind
+    - [analytical](mind_type) mind
+    - I am kind of [calm](mind_type)
+    - I am mostly [restless](mind_type)
+    - My mind is kind of [analytical](mind_type)
+    - [calm](mind_type) mind
+
+- intent: sleep_type
+  examples: |
+    - [interrupted](sleep_type)
+    - [little interrupted](sleep_type)
+    - [prolonged](sleep_type)
+    - The sleep is [interrupted](sleep_type)
+    - sleep is [little interrupted](sleep_type)
+    - sleep is [prolonged](sleep_type)
+    - [interrupted](sleep_type) sleep
+    - [little interrupted](sleep_type) sleep
+    - [prolonged](sleep_type) sleep
+
+
+- intent: speech_type
+  examples: |
+    - [fast](speech_type)
+    - [sharp](speech_type)
+    - [monotonous](speech_type)
+    - Speech is [fast](speech_type)
+    - speech is [sharp](speech_type)
+    - speech is [monotonous](speech_type)
+    - [fast](speech_type) speaker
+    - [sharp](speech_type) speaker
+    - [monotonous](speech_type) speaker
+
+
+- regex: personName
+  examples: | 
+    - [aA-zZ]
+

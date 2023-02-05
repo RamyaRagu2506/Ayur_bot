@@ -1,0 +1,6 @@
+[
+  {
+    "name": "personName",
+    "pattern": "[aA-zZ]"
+  }
+]

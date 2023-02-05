@@ -1,0 +1,35 @@
+version: "3.1"
+
+rules:
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+- rule: one
+  steps:
+  - intent: person_name
+  - action: action_for_person_name
+- rule: two
+  steps:  
+  - intent: body_type
+  - action: action_for_body_frame
+- rule: three
+  steps:
+  - intent: appetite_type
+  - action: action_for_appetite
+- rule: four  
+  steps:
+  - intent: mind_type
+  - action: action_for_mind
+
+- rule: five
+  steps: 
+  - intent: speech_type
+  - action: action_for_speech
+  - action: action_for_results
+
+- rule: six
+  steps: 
+  - intent: sleep_type
+  - action: action_for_sleep

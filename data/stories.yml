@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+- story: AyurBot Story To find whether a patient is Kapa Vitta Pita
+  steps:
+  - intent: greet
+  - action: utter_Ayurbot_intro
+  - intent: affirm
+  - action: utter_ask_for_name
+  - intent: person_name
+  - action: action_for_person_name
+  - intent: body_type
+  - action: action_for_body_frame
+  - intent: appetite_type
+  - action: action_for_appetite
+  - intent: mind_type
+  - action: action_for_mind
+  - intent: sleep_type
+  - action: action_for_sleep
+  - intent: speech_type
+  - action: action_for_speech
+  - action: action_for_results
+
+

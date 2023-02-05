@@ -1,0 +1,103 @@
+version: "3.1"
+slots:
+  person_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: personName
+  body_frame:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: body_frame
+  appetite_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: appetite_type   
+  mind_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: mind_type   
+  sleep_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: sleep_type  
+  speech_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: speech_type
+
+    
+
+
+entities:
+ - personName
+ - body_frame
+ - skin_type
+ - appetite_type
+ - mind_type
+ - sleep_type
+ - speech_type
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - body_type
+  - person_name
+  - appetite_type
+  - mind_type
+  - sleep_type
+  - speech_type
+
+actions: 
+  - action_for_appetite
+  - action_for_body_frame
+  - action_for_person_name
+  - action_for_mind
+  - action_for_sleep
+  - action_for_speech
+  - action_for_results
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Hey, Have a great day :)"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_Ayurbot_intro: 
+  - text: "Hey! I am AyurBot.Now here to converse with you and find out how can improve based on your basic characterisicts."
+
+  utter_body_frame:
+  - text: "Hi {person_name}, May I know What kind of body type? Thin or medium or heavy?"
+
+  utter_ask_for_name: 
+  - text: "May I have your Name please?"
+
+  utter_ask_for_appetite:
+  - text: "What is your appetite level? Variable or good or slow? "
+
+  utter_ask_for_mind:
+  - text: "Describe the options best suits you. Restless or Analytical or Calm?"
+
+  utter_ask_for_sleep:
+  - text: "How do you describe your sleep? Interrupted or little interrupted or prolonged"
+
+  utter_ask_for_speech:
+  - text: "That is fine! How do you speak? Fast or Sharp or Monotonous?"
+
+  utter_ending_results:
+  - text: "Hey I have received your details, just give my neural network to process your info. Will come up with some conclusion. Swoiinnnnn...."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"person_name\"}}]": "action_for_person_name",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"person_name\"}}, {\"prev_action\": {\"action_name\": \"action_for_person_name\"}, \"user\": {\"intent\": \"person_name\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"body_type\"}}]": "action_for_body_frame",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"body_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_body_frame\"}, \"user\": {\"intent\": \"body_type\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"speech_type\"}}]": "action_for_speech",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"speech_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_speech\"}, \"user\": {\"intent\": \"speech_type\"}}]": "action_for_results",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"speech_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_speech\"}, \"user\": {\"intent\": \"speech_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_results\"}, \"user\": {\"intent\": \"speech_type\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appetite_type\"}}]": "action_for_appetite",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"appetite_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_appetite\"}, \"user\": {\"intent\": \"appetite_type\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sleep_type\"}}]": "action_for_sleep",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"sleep_type\"}}, {\"prev_action\": {\"action_name\": \"action_for_sleep\"}, \"user\": {\"intent\": \"sleep_type\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "predicting default action with intent back"
+    ]
+  }
+}
