@@ -28,7 +28,7 @@ class ActionForPersonName(Action):
         for data in tracker.latest_message['entities']:
 
             name = data['value']
-            dispatcher.utter_message(text=f"Hi {name}, May I know What kind of body type? Thin or medium or heavy?")
+            dispatcher.utter_message(text=f"Hi {name}, May I know What kind of body type describes you well? Thin or medium or heavy?")
 
             return [SlotSet("person_name",name)]
     

@@ -16,6 +16,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - hoi
 
 - intent: goodbye
   examples: |
@@ -42,6 +43,7 @@ nlu:
     - Yup
     - Oh sure
     - Ofcourse
+    - yeah 
 
 - intent: deny
   examples: |
